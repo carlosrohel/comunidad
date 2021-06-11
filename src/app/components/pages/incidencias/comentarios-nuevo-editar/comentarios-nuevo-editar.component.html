@@ -1,0 +1,87 @@
+<!-- Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card ">
+            <div class="card-header bg-info">
+                <h4 class="card-title text-white">Editar el Comentario </h4>
+            </div>
+            <form action="#" class="form-horizontal" [formGroup]="forma" (ngSubmit)="guardar()">
+                <div class="form-body">
+                    <div class="card-body border-bottom">
+                        <h6 class="card-subtitle">Cualquier cambpo que quede en blanco será ignorado a la hora de
+                            actualizar.</h6>
+                        <h4 class="card-title">Información del registro</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!--/span-->
+                            <div class="col">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-2">Comentario</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" formControlName="comentario" [class.is-invalid]="comentarioNoValido">
+                                        <small class="form-control-feedback" *ngIf="comentarioNoValido"> El comnetario es obligatorio</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <h4 class="card-title mt-4">Incidencia</h4>
+                    </div>
+                    <hr class="mt-0 mb-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-xlg-9 col-md-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="example-email" class="col-md-12">Título</label>
+                                            <div class="col-md-12 ms-3">Título del servicio contratado</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="col-sm-12">Descripción</label>
+                                            <div class="col-md-12 ms-3">Es un servicio que en globa Lorem, ipsum dolor
+                                                sit amet
+                                                consectetur adipisicing elit. Ab ullam eveniet, perspiciatis, nulla
+                                                distinctio
+                                                sapiente aut quibusdam deleniti id ut fugit eligendi saepe, excepturi
+                                                voluptatum
+                                                unde quas odio! Consequatur, commodi!</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="example-email" class="col-md-12">Fecha Inicio</label>
+                                            <div class="col-md-12 ms-3">25/04/2021</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="example-email" class="col-md-12">Fecha de fin</label>
+                                            <div class="col-md-12 ms-3">20/05/2021</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="example-email" class="col-md-12">Progreso</label>
+                                            <div class="col-md-12 ms-3">Finalizado</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="p-3 border-top">
+                        <div class="text-end">
+                            <button type="submit"
+                                class="btn btn-info rounded-pill px-4 waves-effect waves-light">Save</button>
+                            <button type="submit"
+                                class="btn btn-dark rounded-pill px-4 waves-effect waves-light">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Row -->

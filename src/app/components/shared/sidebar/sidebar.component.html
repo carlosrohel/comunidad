@@ -1,0 +1,141 @@
+<!-- ============================================================== -->
+<!-- Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->
+<aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                  <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                              <!-- User profile -->
+                              <div class="user-profile text-center position-relative pt-4 mt-1">
+                                    <!-- User profile image -->
+                                    <div class="profile-img m-auto"> <img src="../assets/images/users/5.jpg" alt="user"
+                                                class="w-100 rounded-circle" /> </div>
+                                    <!-- User profile text-->
+                                    <div class="profile-text py-1">
+                                          <a href="#" class="dropdown-toggle link u-dropdown" data-bs-toggle="dropdown"
+                                                role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe
+                                                <span class="caret"></span>
+                                          </a>
+                                          <div class="dropdown-menu animated flipInY">
+                                                <a class="dropdown-item" href="#">
+                                                      <i data-feather="user" class="feather-sm text-info me-1 ms-1"></i>
+                                                      My Profile
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">
+                                                      <i data-feather="settings"
+                                                            class="feather-sm text-warning me-1 ms-1"></i>
+                                                      Account Setting
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="authentication-login3.html">
+                                                      <i data-feather="log-out"
+                                                            class="feather-sm text-danger me-1 ms-1"></i>
+                                                      Logout
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <div class="pl-4 p-2">
+                                                      <button type="button"
+                                                            class="btn d-block w-100 btn-info rounded-pill">View
+                                                            Profile</button>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- End User profile text-->
+                        </li>
+                        <!-- End User Profile-->
+                        <!-- Comunidad -->
+                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span
+                                    class="hide-menu">Comunidad</span></li>
+                        <!-- 
+
+                        <li class="sidebar-item">
+                              <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                                    aria-expanded="false">
+                                    <i data-feather="mail" class="feather-icon"></i>
+                                    <span class="hide-menu"> Documentación</span>
+                              </a>
+                              <ul aria-expanded="false" class="collapse  first-level">
+                                    <li class="sidebar-item"><a href="inbox-email.html" class="sidebar-link"><i
+                                                      class="mdi mdi-email"></i><span class="hide-menu"> Actas
+                                                </span></a></li>
+                                    <li class="sidebar-item"><a href="inbox-email-detail.html" class="sidebar-link"><i
+                                                      class="mdi mdi-email-alert"></i><span class="hide-menu">
+                                                      Escrituras
+                                                </span></a></li>
+                                    <li class="sidebar-item"><a href="inbox-email-compose.html" class="sidebar-link"><i
+                                                      class="mdi mdi-email-secure"></i><span class="hide-menu">
+                                                      Estatutos
+                                                </span></a></li>
+                              </ul>
+                        </li> -->
+
+                        <li class="sidebar-item" routerLinkActive="selected"> <a
+                                    [routerLink]="['DocumentacionComunidad','Listado','1']"
+                                    class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false">
+                                    <i data-feather="mail" class="feather-icon"></i>
+                                    <span class="hide-menu">Documentación</span></a></li>
+
+                        <li class="sidebar-item" routerLinkActive="selected"> <a
+                                    [routerLink]="['Cuentas','Listado','1']"
+                                    class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i
+                                          data-feather="calendar" class="feather-icon"></i><span
+                                          class="hide-menu">Cuentas</span></a></li>
+
+                        <li class="sidebar-item" routerLinkActive="selected"> <a
+                                    [routerLink]="['Contrataciones','Listado','1']"
+                                    class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i
+                                          data-feather="layout" class="feather-icon"></i><span
+                                          class="hide-menu">Contrataciones</span></a>
+                        </li>
+                        <li class="sidebar-item" routerLinkActive="selected"> <a
+                                    [routerLink]="['Incidencias','Listado','1']"
+                                    class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i
+                                          data-feather="book" class="feather-icon"></i><span
+                                          class="hide-menu">Incidencias</span></a>
+                        </li>
+                        <li class="sidebar-item" routerLinkActive="selected"> <a
+                              [routerLink]="['Puertas','Listado','1']"
+                                    class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i
+                                          data-feather="check-circle" class="feather-icon"></i><span
+                                          class="hide-menu">Puertas</span></a>
+                        </li>
+                        <!-- End Comunidad -->
+                        <!-- Servicios a contratar -->
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span
+                                    class="hide-menu">Servicios</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="app-chats.html" aria-expanded="false"><i data-feather="message-circle"
+                                          class="feather-icon"></i><span class="hide-menu">Catalogo de
+                                          servicios</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="app-calendar.html" aria-expanded="false"><i data-feather="calendar"
+                                          class="feather-icon"></i><span class="hide-menu">Documentación</span></a></li>
+                        <!-- End Servicios a contratar -->
+                        <!-- FAQs -->
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span
+                                    class="hide-menu">FAQs</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="app-taskboard.html" aria-expanded="false"><i data-feather="layout"
+                                          class="feather-icon"></i><span class="hide-menu">Preguntas
+                                          Frecuntes</span></a>
+                        </li>
+                  </ul>
+            </nav>
+            <!-- ============================================================== -->
+            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+
+
+</aside>
+<!--Menu sidebar -->

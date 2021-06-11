@@ -1,0 +1,82 @@
+<!-- ============================================================== -->
+<!-- Container fluid  -->
+<!-- ============================================================== -->
+<div class="container-fluid">
+    <!-- -------------------------------------------------------------- -->
+    <!-- Start Page Content -->
+    <!-- -------------------------------------------------------------- -->
+    <!-- Row -->
+    <div class="row">
+        <!-- Column -->
+        <div class="col-lg-4 col-xlg-3 col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mt-2 d-flex justify-content-center">Comunidad</h4>
+                    <small class="text-muted pt-4 db">Título</small>
+                    <h6>Comunidad del anillo</h6>
+                    <small class="text-muted pt-4 db">Dirección</small>
+                    <h6>71 Pilgrim Avenue Chevy Chase, MD 20815</h6>
+                    <small class="text-muted pt-4 db">Estado</small>
+                    <h6>Activa</h6>
+                    <div class="row text-center justify-content-md-center">
+                        <div class="col-4"><a href="javascript:void(0)" class="link"><i class="icon-people"></i>
+                                <font class="font-weight-medium">254</font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Column -->
+        <div class="col-lg-8 col-xlg-9 col-md-7">
+            <div class="card">
+                <div class="card-body">                
+                        <div class="mb-3">
+                            <label for="example-email" class="col-md-12">Incidencia</label>
+                            <div class="col-md-12 ms-3">Título de la incidencia</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-sm-12">Descripción</label>
+                            <div class="col-md-12 ms-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ullam eveniet, perspiciatis, nulla distinctio sapiente aut quibusdam deleniti id ut fugit eligendi saepe, excepturi voluptatum unde quas odio! Consequatur, commodi!</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="example-email" class="col-md-12">Fecha Inicio</label>
+                            <div class="col-md-12 ms-3">15/10/2021</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="example-email" class="col-md-12">Fecha Fin</label>
+                            <div class="col-md-12 ms-3">25/10/2021</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="example-email" class="col-md-12">Progreso</label>
+                            <div class="col-md-12 ms-3">Finalizado</div>
+                        </div>
+
+
+
+                        
+                        
+                        <div class="row mb-3">
+                            <div class="col-sm-6 d-flex justify-content-start">
+                                <button class="btn btn-success" [routerLink]="['/','Incidencias','Editar','1']">
+                                    <i class="me-2 mdi mdi-camera"></i>Ver Fotos
+                                </button>
+                            </div>
+                                <div class="col-sm-6 d-flex justify-content-end">
+                                    <button class="btn btn-success" [routerLink]="['/','Incidencias','Editar','1']">Editar</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-comentarios-listado></app-comentarios-listado>
+    <!-- Row -->
+    <!-- -------------------------------------------------------------- -->
+    <!-- End PAge Content -->
+    <!-- -------------------------------------------------------------- -->
+</div>
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->

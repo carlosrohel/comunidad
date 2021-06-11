@@ -1,0 +1,119 @@
+<!-- Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card ">
+            <div class="card-header bg-info">
+                <h4 class="card-title text-white">Editar el Usuario asignado en la puerta </h4>
+            </div>
+
+            <div class="col-12">
+                <!-- <div class="col-lg-4 col-xlg-3 col-md-5"> -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+    
+                            <h4 class="col-12 card-title mt-4 d-flex justify-content-center">Comunidad</h4>
+                            <div class="col-4 ">
+                                <small class="text-muted pt-4 db">Título</small>
+                                <h6>Comunidad del anillo</h6>
+                            </div>
+                            <div class="col-4">
+                                <small class="text-muted pt-4 db">Dirección</small>
+                                <h6>71 Pilgrim Avenue Chevy Chase, MD 20815</h6>
+                            </div>
+                            <div class="col-4">
+                                <small class="text-muted pt-4 db">Estado</small>
+                                <h6>Activa</h6>
+                            </div>
+                        </div>
+    
+                        <div class="row text-center justify-content-md-center">
+                            <div class="col">
+                                <a href="javascript:void(0)" class="link mt-2"><i class="icon-people"></i>
+                                    <font class="font-weight-medium">254</font>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="col-12 card-title mt-4 d-flex justify-content-center">Puerta: 1 A</h4>
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" class="form-horizontal" [formGroup]="forma" (ngSubmit)="guardar()">
+                <div class="form-body">
+                    <div class="card-body border-bottom">
+                        <h6 class="card-subtitle">Cualquier cambpo que quede en blanco será ignorado a la hora de
+                            actualizar.</h6>
+                        <h4 class="card-title">Información del registro</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Nombre</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" placeholder="Fernando Perez" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Correo</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" placeholder="fernando@gmail.com" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Rol</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control form-select"  formControlName="rol" [class.is-invalid]="rolNoValido" data-placeholder="Choose a Category"
+                                            tabindex="1">
+                                            <option value="Vecino">Vecino</option>
+                                            <option value="Presidente">Presidente</option>
+                                            <option value="Administrador">Administrador</option>
+                                        </select>
+                                        <small class="form-control-feedback text-danger" *ngIf="rolNoValido"> El rol es obligatorio </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Puerta</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control form-select" formControlName="puerta" [class.is-invalid]="puertaNoValida" data-placeholder="Choose a Category"
+                                            tabindex="1">
+                                            <option value="1A">1A</option>
+                                            <option value="1B">1B</option>
+                                            <option value="2A">2A</option>
+                                            <option value="2B">2B</option>
+                                        </select>
+                                        <small class="form-control-feedback text-danger" *ngIf="puertaNoValida"> La puerta es obligatorio </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                    </div>
+                    <div class="p-3 border-top">
+                        <div class="text-end">
+                            <button type="submit"
+                                class="btn btn-info rounded-pill px-4 waves-effect waves-light">Save</button>
+                            <button type="submit"
+                                class="btn btn-dark rounded-pill px-4 waves-effect waves-light">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Row -->

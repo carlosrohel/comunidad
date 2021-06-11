@@ -1,0 +1,59 @@
+<!-- ============================================================== -->
+<!-- Container fluid  -->
+<!-- ============================================================== -->
+<div class="container-fluid">
+    <!-- -------------------------------------------------------------- -->
+    <!-- Start Page Content -->
+    <!-- -------------------------------------------------------------- -->
+    <!-- Row -->
+    <div class="row">
+        <!-- Column -->
+        <div class="col-12">
+            <!-- <div class="col-lg-4 col-xlg-3 col-md-5"> -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+
+                        <h4 class="col-12 card-title mt-4 d-flex justify-content-center">Comunidad</h4>
+                        <div class="col-4 ">
+                            <small class="text-muted pt-4 db">Título</small>
+                            <h6>Comunidad del anillo</h6>
+                        </div>
+                        <div class="col-4">
+                            <small class="text-muted pt-4 db">Dirección</small>
+                            <h6>71 Pilgrim Avenue Chevy Chase, MD 20815</h6>
+                        </div>
+                        <div class="col-4">
+                            <small class="text-muted pt-4 db">Estado</small>
+                            <h6>Activa</h6>
+                        </div>
+                    </div>
+
+                    <div class="row text-center justify-content-md-center">
+                        <div class="col">
+                            <a href="javascript:void(0)" class="link mt-2"><i class="icon-people"></i>
+                                <font class="font-weight-medium">254</font>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="col-12 card-title mt-4 d-flex justify-content-center">Puerta: 1 A</h4>
+                    <div class="mb-3">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                            <button class="btn btn-success" [routerLink]="['/','Puertas','Editar','1']">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <app-usuarios-listado></app-usuarios-listado>
+    </div>
+    <!-- Row -->
+    <!-- -------------------------------------------------------------- -->
+    <!-- End PAge Content -->
+    <!-- -------------------------------------------------------------- -->
+</div>
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->

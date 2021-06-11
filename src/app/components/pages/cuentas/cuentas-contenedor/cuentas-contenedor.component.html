@@ -1,0 +1,17 @@
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="button-group">
+                    <button type="button" [routerLink]="['/','Cuentas','Nuevo']" class="btn btn-lg px-4 fs-4 btn-light-success text-success font-weight-medium"
+                        id="ts-success"><i class="me-2 mdi mdi-library-plus"></i> Nuevo Documento</button>
+                        <button type="button" [routerLink]="['/','Cuentas','Listado','1']" class="btn btn-lg px-4 fs-4 btn-light-info text-info font-weight-medium"
+                        id="ts-info"><i class="me-2 mdi mdi-format-list-bulleted"></i>Listado</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

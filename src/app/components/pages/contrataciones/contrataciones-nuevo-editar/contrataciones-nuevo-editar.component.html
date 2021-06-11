@@ -1,0 +1,143 @@
+<!-- Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card ">
+            <div class="card-header bg-info">
+                <h4 class="card-title text-white">Editar la Documentación </h4>
+            </div>
+            <form action="#" class="form-horizontal" [formGroup]="forma" (ngSubmit)="guardar()">
+                <div class="form-body">
+                    <div class="card-body border-bottom">
+                        <h6 class="card-subtitle">Cualquier cambpo que quede en blanco será ignorado a la hora de
+                            actualizar.</h6>
+                        <h4 class="card-title">Información del registro</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Fecha Inicio</label>
+                                    <div class="col-md-9">
+                                        <input type="date" class="form-control" formControlName="fechaInicio"
+                                            [class.is-invalid]="fechaInicioNoValida">
+                                        <small class="form-control-feedback text-danger"
+                                            *ngIf="fechaInicioNoValida">This field has error.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Fecha Fin</label>
+                                    <div class="col-md-9">
+                                        <input type="date" class="form-control" formControlName="fechaFin" [class.is-invalid]="fechaFinNoValida">
+                                        <small class="form-control-feedback text-danger" *ngIf="fechaFinNoValida"> This
+                                            field has error. </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Estado</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control form-select" data-placeholder="Choose a Category"
+                                            tabindex="1" formControlName="estado" [class.is-invalid]="estadoNoValida">
+                                            <option value="Activo">Activo</option>
+                                            <option value="Cancelado">Cancelado</option>
+                                            <option value="Finalizado">Finalizado</option>
+                                        </select>
+                                        <small class="form-control-feedback text-danger" *ngIf="estadoNoValida"> This
+                                            field has error. </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Precio</label>
+                                    <div class="col-md-9">
+                                        <input type="number" class="form-control" formControlName="precio"
+                                            [class.is-invalid]="precioNoValida">
+                                        <small class="form-control-feedback text-danger" *ngIf="precioNoValida"> This is
+                                            inline help </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <h4 class="card-title">Address</h4>
+                    </div>
+                    <hr class="mt-0 mb-5">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Servicio</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" formControlName="servicio">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8 col-xlg-9 col-md-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="example-email" class="col-md-12">Título</label>
+                                            <div class="col-md-12 ms-3">Título del servicio contratado</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="col-sm-12">Descripción</label>
+                                            <div class="col-md-12 ms-3">Es un servicio que en globa Lorem, ipsum dolor
+                                                sit amet
+                                                consectetur adipisicing elit. Ab ullam eveniet, perspiciatis, nulla
+                                                distinctio
+                                                sapiente aut quibusdam deleniti id ut fugit eligendi saepe, excepturi
+                                                voluptatum
+                                                unde quas odio! Consequatur, commodi!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="p-3 border-top">
+                        <div class="text-end">
+                            <button type="submit"
+                                class="btn btn-info rounded-pill px-4 waves-effect waves-light">Save</button>
+                            <button type="submit"
+                                class="btn btn-dark rounded-pill px-4 waves-effect waves-light">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Row -->
+
+<hr>
+<pre>
+  Estado del formulario: {{ forma.valid }}
+  <br>
+  Status: {{ forma.status }}
+</pre>
+
+<pre>
+
+  {{ forma.value | json }}
+
+</pre>

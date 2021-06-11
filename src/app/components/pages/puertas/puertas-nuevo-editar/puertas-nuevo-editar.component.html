@@ -1,0 +1,75 @@
+<!-- Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card ">
+            <div class="card-header bg-info">
+                <h4 class="card-title text-white">Editar la puerta </h4>
+            </div>
+
+            <div class="col-12">
+                <!-- <div class="col-lg-4 col-xlg-3 col-md-5"> -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+    
+                            <h4 class="col-12 card-title mt-4 d-flex justify-content-center">Comunidad</h4>
+                            <div class="col-4 ">
+                                <small class="text-muted pt-4 db">Título</small>
+                                <h6>Comunidad del anillo</h6>
+                            </div>
+                            <div class="col-4">
+                                <small class="text-muted pt-4 db">Dirección</small>
+                                <h6>71 Pilgrim Avenue Chevy Chase, MD 20815</h6>
+                            </div>
+                            <div class="col-4">
+                                <small class="text-muted pt-4 db">Estado</small>
+                                <h6>Activa</h6>
+                            </div>
+                        </div>
+    
+                        <div class="row text-center justify-content-md-center">
+                            <div class="col">
+                                <a href="javascript:void(0)" class="link mt-2"><i class="icon-people"></i>
+                                    <font class="font-weight-medium">254</font>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" class="form-horizontal" [formGroup]="forma" (ngSubmit)="guardar()">
+                <div class="form-body">
+                    <div class="card-body border-bottom">
+                        <h6 class="card-subtitle">Cualquier cambpo que quede en blanco será ignorado a la hora de
+                            actualizar.</h6>
+                        <h4 class="card-title">Información del registro</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 row">
+                                    <label class="control-label text-end col-md-3">Puerta</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" formControlName="puerta" [class.is-invalid]="puertaNoValida">
+                                        <small class="form-control-feedback text-danger" *ngIf="puertaNoValida"> La puerrta es obligatoria </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                    </div>
+                    <div class="p-3 border-top">
+                        <div class="text-end">
+                            <button type="submit"
+                                class="btn btn-info rounded-pill px-4 waves-effect waves-light">Save</button>
+                            <button type="submit"
+                                class="btn btn-dark rounded-pill px-4 waves-effect waves-light">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Row -->
